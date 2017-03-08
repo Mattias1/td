@@ -4,6 +4,7 @@ using Bearded.TD.Commands;
 using Bearded.TD.Game;
 using Bearded.TD.Game.Generation;
 using Bearded.TD.Game.UI;
+using Bearded.TD.Networking;
 using Bearded.TD.Rendering;
 using Bearded.TD.Screens;
 using Bearded.TD.Utilities.Console;
@@ -75,6 +76,8 @@ namespace Bearded.TD
             {
                 Close();
             }
+
+            NetworkManager.Instance.Lobby?.Update();
 
             screenManager.Update(e);
         }
