@@ -36,7 +36,7 @@ namespace Bearded.TD
             inputManager = new InputManager(Mouse);
 
             screenManager = new ScreenManager(inputManager);
-            
+
             screenManager.AddScreenLayerOnTop(new LobbyScreen(screenManager, renderContext.Geometries, logger, inputManager));
             screenManager.AddScreenLayerOnTop(new ConsoleScreenLayer(screenManager, renderContext.Geometries, logger));
 

@@ -28,6 +28,5 @@ namespace Bearded.TD.Utilities
         {
             throw new NotImplementedException();
         }
-
     }
 }
